@@ -40,7 +40,7 @@ func TestGetAPIKey(t *testing.T) {
 			headers: http.Header{
 				"Authorization": []string{""},
 			},
-			expectedKey:   "prout",
+			expectedKey:   "",
 			expectedError: ErrNoAuthHeaderIncluded,
 		},
 	}
