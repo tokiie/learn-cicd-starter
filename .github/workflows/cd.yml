@@ -46,8 +46,8 @@ jobs:
 
             - name: Migrate DB
               run: |
-                chmod +x ./scripts/migrate.sh
-                ./scripts/migrate.sh
+                chmod +x ./scripts/migrateup.sh
+                ./scripts/migrateup.sh
               shell: bash
 
             - name: Deploy to Cloud Run
